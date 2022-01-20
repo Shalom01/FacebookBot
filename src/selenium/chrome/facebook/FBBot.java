@@ -33,9 +33,9 @@ public class FBBot {
 		
 		/*build the kosherNames Set*/
 		Scanner scanner = new Scanner(new File("NameList.txt"));
-	    while(scanner.hasNext()){
-	        kosherNames.add(scanner.next());
-	    }
+		while(scanner.hasNext()){
+			kosherNames.add(scanner.next());
+		}
 		
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_setting_values.notifications", 2);
